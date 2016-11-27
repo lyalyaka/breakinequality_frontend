@@ -3,7 +3,8 @@ import {AuthGuard}                from './_guards/index';
 import {MainComponent,
         HomeComponent,
         QuestionsComponent,
-        AccountComponent}         from './components/index';
+        AccountComponent,
+        ReportsComponent}         from './components/index';
 
 
 const appRoutes: Routes = [
@@ -15,7 +16,8 @@ const appRoutes: Routes = [
             { path: '', component: QuestionsComponent },
             { path: 'home', component: HomeComponent },
             { path: 'questions', component: QuestionsComponent },
-            { path: 'account', component: AccountComponent }
+            { path: 'account', component: AccountComponent },
+            { path: 'reports', component: ReportsComponent }
         ]
     },
     { path: '**', redirectTo: '/home', pathMatch: 'full' }
@@ -27,5 +29,6 @@ export const routedComponents = [
     HomeComponent,
     MainComponent,
     QuestionsComponent,
-    AccountComponent
+    AccountComponent,
+    ReportsComponent
 ];

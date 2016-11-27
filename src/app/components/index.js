@@ -7,4 +7,5 @@ __export(require('./home.component'));
 __export(require('./questions.component'));
 __export(require('./account.component'));
 __export(require('./googlechart.component'));
+__export(require('./reports.component'));
 //# sourceMappingURL=index.js.map

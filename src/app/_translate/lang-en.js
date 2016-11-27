@@ -2,7 +2,7 @@
 "use strict";
 exports.LANG_EN_NAME = 'en';
 exports.LANG_EN_TRANS = {
-    'account': 'Accounts',
+    'account': 'New account',
     'events': 'Events',
     'reports': 'Reports',
     'log_out': 'LogOut',

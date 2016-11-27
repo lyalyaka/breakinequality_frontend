@@ -40,39 +40,41 @@
         });
     </script>
 
-    <!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
-    <!--<script type="text/javascript" src="src/components/test.js"></script>-->
-    <!--<script type="text/javascript" src="https://www.google.com/jsapi"></script>-->
-    <!--<script>-->
-        <!--google.charts.load('current', {'packages':['corechart']});-->
-        <!--google.charts.setOnLoadCallback(drawChart);-->
-
-        <!--function drawChart() {-->
-            <!--var data = google.visualization.arrayToDataTable([-->
-                <!--['Year', 'Sales', 'Expenses'],-->
-                <!--['2004',  1000,      400],-->
-                <!--['2005',  1170,      460],-->
-                <!--['2006',  660,       1120],-->
-                <!--['2007',  1030,      540]-->
-            <!--]);-->
-
-            <!--var options = {-->
-                <!--title: 'Company Performance',-->
-                <!--curveType: 'function',-->
-                <!--legend: { position: 'bottom' },-->
-                <!--width: '100%'-->
-            <!--};-->
-
-            <!--var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));-->
-
-            <!--chart.draw(data, options);-->
-        <!--}-->
 
 
-        <!--$(window).resize(function(){-->
-            <!--drawChart();-->
-        <!--});-->
-    <!--</script>-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="src/components/test.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script>
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses'],
+                ['2004',  1000,      400],
+                ['2005',  1170,      460],
+                ['2006',  660,       1120],
+                ['2007',  1030,      540]
+            ]);
+
+            var options = {
+                title: 'Statistics',
+                curveType: 'function',
+                legend: { position: 'bottom' },
+                width: '100%'
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+
+        $(document).ready(function () {
+            setTimeout(drawChart, 5000);
+            console.log("in ready!");
+        });
+    </script>
 
     <!--ng2-chart-->
     <!--<script src="node_modules/chart.js/src/chart.js"></script>-->

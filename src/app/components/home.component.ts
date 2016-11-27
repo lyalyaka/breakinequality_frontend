@@ -10,19 +10,19 @@ import { AuthService, MainService }     from '../_services/index';
     template: `
         <nav materialize class="teal lighten-2">
             <div class="nav-wrapper">
-              <a class="brand-logo">Eleos</a>
+              <a class="brand-logo">&nbsp;&nbsp;Eleos</a>
               <a materialize="sideNav" [materializeParams]="[{edge:'left'},{closeOnClick: true}]" href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
                  <li *ngFor="let routeName of routeNames" routerLinkActive="active"><a [routerLink]="[routeName]">{{ routeName | translate}}</a></li>
                  <li><a (click)=authService.logout()>{{ 'log_out' | translate }}</a></li>
-                 <!-- Dropdown Trigger -->
-                  <a materialize="dropdown" class='dropdown-button btn-flat' data-activates='dropdown1'>Drop Me!</a>
-                
-                  <!-- Dropdown Structure -->
-                  <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="#!">one</a></li>
-                    <li><a href="#!">two</a></li>
-                  </ul>
+                 <!--&lt;!&ndash; Dropdown Trigger &ndash;&gt;-->
+                  <!--<a materialize="dropdown" class='dropdown-button btn-flat' data-activates='dropdown1'>Drop Me!</a>-->
+                <!---->
+                  <!--&lt;!&ndash; Dropdown Structure &ndash;&gt;-->
+                  <!--<ul id='dropdown1' class='dropdown-content'>-->
+                    <!--<li><a href="#!">one</a></li>-->
+                    <!--<li><a href="#!">two</a></li>-->
+                  <!--</ul>-->
               </ul>
             </div>
         </nav>
@@ -45,7 +45,7 @@ import { AuthService, MainService }     from '../_services/index';
 
 export class HomeComponent implements OnInit {
     // TODO: ngFor for menu items with icons
-    private routeNames = ["account", "reports", "questions"];
+    private routeNames = ["questions", "reports", "account"];
 
     public  translatedText: string;
     public  supportedLanguages: any[];

@@ -14,51 +14,32 @@ import {Observable}                                     from 'rxjs/Rx';
     moduleId: module.id,
     selector: 'account',
     template: `
-        
-        
         <div class="row container">
             <div class="col s12 form">
-              <div class="card-panel z-depth-2">
-                <h3 class="brand-logo teal-text text-darken-3">User Login</h3>
-                <div class="row">
+              <div class="card-panel">
+                <!--<span class="card-title brand-logo teal-text text-darken-3"><h3>New Account</h3></span>-->
+                <!--<h3 class="card-title brand-logo teal-text text-darken-3">New Account</h3>-->
+                <!--<div class="row">-->
                   <div class="input-field col s12">
                     <input id="username" type="text" class="validate">
                     <label for="username">First Name</label>
                   </div>
-                </div>
-                <div class="row">
+                <!--</div>-->
+                <!--<div class="row">-->
                   <div class="input-field col s12">
                     <input id="password" type="password" class="validate">
                     <label for="password">Last Name</label>
                   </div>
-                </div>
+                <!--</div>-->
                 <div class="row">
-                  <div class="col m6">
-                    <button type="submit" class="waves-effect waves-light btn teal darken-3"> Login
+                  <div class="col s12">
+                    <button type="submit" class="right waves-effect waves-light btn-flat"> Save
                     </button>
                   </div>
                 </div>
-                
-             
-          
               </div>
             </div>
         </div>
-        
-        <!--template-->
-          <!--<div class="col-md-12 text-center" style="margin-top: 10px;height: 50%">-->
-            <!--<button (click)="randomizeType()" style="display: inline-block">Toggle</button>-->
-          <!--</div>-->
-          <div class="row container" >
-            <div class="col s12 form">
-              <div class="card-panel z-depth-2">
-          <div id="curve_chart" ></div>
- </div>
-            </div>
-        </div>
-        
-
-        <!-- FILTER END-->
     `,
     providers: [MainService]
 })

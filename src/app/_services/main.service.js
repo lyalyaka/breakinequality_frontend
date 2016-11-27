@@ -17,13 +17,6 @@ var MainService = (function () {
     function MainService(http, authHttp) {
         this.http = http;
         this.authHttp = authHttp;
-        this.mainUrl = 'https://tnapi.herokuapp.com/';
-        this.headers = new http_1.Headers({ 'Content-Type': 'application/json' });
-        this.recordsUrl = this.mainUrl + 'record?component_key=eq.';
-        this.recUrl = this.mainUrl + 'record?component_key=@@.'; //contains word
-        this.recordsPostUrl = this.mainUrl + 'record?id=eq.';
-        this.newsPostUrl = this.mainUrl + 'record';
-        this.newsUrl = this.mainUrl + 'record?component_key=eq.news&order=created_date';
     }
     //to handle errors
     MainService.prototype.handleError = function (error) {

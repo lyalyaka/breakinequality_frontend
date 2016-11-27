@@ -10,7 +10,8 @@ var appRoutes = [
             { path: '', component: index_2.QuestionsComponent },
             { path: 'home', component: index_2.HomeComponent },
             { path: 'questions', component: index_2.QuestionsComponent },
-            { path: 'account', component: index_2.AccountComponent }
+            { path: 'account', component: index_2.AccountComponent },
+            { path: 'reports', component: index_2.ReportsComponent }
         ]
     },
     { path: '**', redirectTo: '/home', pathMatch: 'full' }
@@ -20,6 +21,7 @@ exports.routedComponents = [
     index_2.HomeComponent,
     index_2.MainComponent,
     index_2.QuestionsComponent,
-    index_2.AccountComponent
+    index_2.AccountComponent,
+    index_2.ReportsComponent
 ];
 //# sourceMappingURL=app.routing.js.map

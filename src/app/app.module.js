@@ -14,8 +14,6 @@ var forms_1 = require('@angular/forms');
 var http_1 = require('@angular/http');
 var angular2_jwt_1 = require('angular2-jwt');
 var angular2_materialize_1 = require('angular2-materialize');
-// import {ChartsModule}                     from 'ng2-charts';
-// import { ChartModule } from 'angular2-highcharts';
 var app_routing_1 = require('./app.routing');
 var index_1 = require('./_services/index');
 var index_2 = require('./_guards/index');
