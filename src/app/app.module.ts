@@ -4,8 +4,6 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule, JsonpModule}          from '@angular/http';
 import {AUTH_PROVIDERS}                   from 'angular2-jwt';
 import {MaterializeDirective}             from 'angular2-materialize';
-// import {ChartsModule}                     from 'ng2-charts';
-// import { ChartModule } from 'angular2-highcharts';
 import {routing, routedComponents}        from './app.routing';
 import {AuthService}                      from './_services/index';
 import {AuthGuard}                        from './_guards/index';
