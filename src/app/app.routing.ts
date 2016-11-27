@@ -2,7 +2,8 @@ import {Routes, RouterModule}     from '@angular/router';
 import {AuthGuard}                from './_guards/index';
 import {MainComponent,
         HomeComponent,
-        QuestionsComponent}       from './components/index';
+        QuestionsComponent,
+        AccountComponent}         from './components/index';
 
 
 const appRoutes: Routes = [
@@ -11,8 +12,10 @@ const appRoutes: Routes = [
     {
         path: 'home', component:HomeComponent, canActivate: [AuthGuard],
         children: [
-            { path: '', component: HomeComponent },
-            { path: 'home', component: HomeComponent }
+            { path: '', component: QuestionsComponent },
+            { path: 'home', component: HomeComponent },
+            { path: 'questions', component: QuestionsComponent },
+            { path: 'account', component: AccountComponent }
         ]
     },
     { path: '**', redirectTo: '/home', pathMatch: 'full' }
@@ -22,5 +25,7 @@ export const routing = RouterModule.forRoot(appRoutes);
 
 export const routedComponents = [
     HomeComponent,
-    MainComponent
+    MainComponent,
+    QuestionsComponent,
+    AccountComponent
 ];

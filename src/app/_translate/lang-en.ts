@@ -3,7 +3,7 @@
 export const LANG_EN_NAME = 'en';
 
 export const LANG_EN_TRANS = {
-    'accounts': 'Accounts',
+    'account': 'Accounts',
     'events': 'Events',
     'reports': 'Reports',
     'log_out': 'LogOut',

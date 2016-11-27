@@ -47,7 +47,9 @@
     "angular2-materialize": "5.1.4",
     "angular2-jwt": "0.1.23",
 
-    "parse": "1.9.2"
+    "parse": "1.9.2",
+
+    "angular2-google-chart": "1.1.2"
   },
   "devDependencies": {
     "concurrently": "^2.0.0"

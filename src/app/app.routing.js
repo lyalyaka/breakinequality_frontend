@@ -1,27 +1,25 @@
 "use strict";
 var router_1 = require('@angular/router');
 var index_1 = require('./_guards/index');
-var main_component_1 = require('./components/main.component');
-var home_component_1 = require('./components/home.component');
-var news_component_1 = require('./components/news.component');
-var profile_component_1 = require('./components/profile.component');
+var index_2 = require('./components/index');
 var appRoutes = [
-    { path: '', component: main_component_1.MainComponent },
+    { path: '', component: index_2.MainComponent },
     {
-        path: 'home', component: home_component_1.HomeComponent, canActivate: [index_1.AuthGuard],
+        path: 'home', component: index_2.HomeComponent, canActivate: [index_1.AuthGuard],
         children: [
-            { path: '', component: news_component_1.NewsComponent },
-            { path: 'news', component: news_component_1.NewsComponent },
-            { path: 'profile', component: profile_component_1.ProfileComponent }
+            { path: '', component: index_2.QuestionsComponent },
+            { path: 'home', component: index_2.HomeComponent },
+            { path: 'questions', component: index_2.QuestionsComponent },
+            { path: 'account', component: index_2.AccountComponent }
         ]
     },
     { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
 exports.routing = router_1.RouterModule.forRoot(appRoutes);
 exports.routedComponents = [
-    home_component_1.HomeComponent,
-    main_component_1.MainComponent,
-    news_component_1.NewsComponent,
-    profile_component_1.ProfileComponent
+    index_2.HomeComponent,
+    index_2.MainComponent,
+    index_2.QuestionsComponent,
+    index_2.AccountComponent
 ];
 //# sourceMappingURL=app.routing.js.map
